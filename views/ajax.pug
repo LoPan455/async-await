@@ -3,3 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  div(class='button-container')
+    a(href='callback')
+      button(type='button') Make Call with Regular Callbacks
+    a(href='promises')
+      button(type='button') Make Call with Promises
+    a(href='async-await')
+      button(type='button') Make Call with Async Await
